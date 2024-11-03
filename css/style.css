@@ -1,0 +1,333 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6dada;
+    /* Dark gray background */
+    color: #E0E0E0;
+    /* Light gray text color */
+    margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: sticky;
+    margin-top: -100px;
+    margin-left: -150px;
+    nav-down: 100px;
+    top: 0;
+    background-color: rgba(22, 16, 17, 0.9);
+    /* Semi-transparent dark gray */
+    box-shadow: 0 2px 10px rgba(195, 175, 175, 0.5);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;         /* Set width to 100% to cover the full width */
+    margin: 0;           /* Remove any default margins */
+    padding: 0 20px;     /* Optional: add horizontal padding if needed */
+    height: 100px;
+    transform: translateX(130px);
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+    margin-right: 200px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #BB86FC;
+    /* Samsung-inspired purple color */
+    font-weight: bold;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #e6dde0;
+    /* Samsung-inspired purple */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #300416;
+    /* Light gray text */
+}
+
+/* CTA Button Styling */
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #3A3A3C;
+    /* Dark gray button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #525252;
+    /* Slightly lighter gray on hover */
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    perspective: 1000px;
+}
+
+/* Phone Image Styling */
+.phone-image {
+    width: 300px;
+    height: 600px;
+    background: url("https://github.com/mallaanirudh/hackathonproject/blob/master/OneDrive/Desktop/websitetest/images/anirudh.png") center/cover no-repeat;
+    transition: transform 0.1s;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+
+/* Info Section Styling */
+.info-section {
+    background-color: #2E2E2E;
+    /* Darker gray background */
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Features and Reviews Layout */
+/* Feature List Styling */
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* Increased gap between features */
+    color: #C7C7C7;
+}
+
+.feature-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Subtle background for each feature */
+    border-radius: 10px;
+    /* Rounded corners for a softer look */
+    padding: 20px;
+    /* Added padding for space around the content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    transition: transform 0.2s;
+    /* Animation for hover effect */
+}
+
+.feature-list li:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+}
+
+.feature-list li h3 {
+    font-size: 1.5rem;
+    /* Increased font size for title */
+    font-weight: 700;
+    /* Bold weight for emphasis */
+    color: #E0E0E0;
+    /* Light gray for feature title */
+    margin: 0 0 10px 0;
+    /* Margin below title */
+}
+
+.feature-list li p {
+    font-size: 1.1rem;
+    /* Increased font size for description */
+    color: #A0A0A0;
+    /* Slightly lighter gray for feature description */
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-list {
+        gap: 20px;
+        /* Reduced gap for smaller screens */
+    }
+
+    .feature-list li {
+        padding: 15px;
+        /* Less padding on smaller screens */
+    }
+
+    .feature-list li h3 {
+        font-size: 1.3rem;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .feature-list li p {
+        font-size: 1rem;
+        /* Adjusted font size for smaller screens */
+    }
+}
+
+
+.info-section h2 {
+    color: #BB86FC;
+    /* Samsung-inspired purple for section titles */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media img {
+
+    /* Feature List Styling */
+    .feature-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #C7C7C7;
+    }
+
+    .feature-list li {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .feature-list li h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #E0E0E0;
+        /* Light gray for feature title */
+        margin: 0;
+    }
+
+    .feature-list li p {
+        font-size: 1rem;
+        color: #A0A0A0;
+        /* Slightly lighter gray for feature description */
+        margin: 0;
+    }
+
+    .feature-list li img {
+        width: 100%;
+        /* Full width of the container */
+        max-width: 400px;
+        /* Restrict the maximum width */
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        /* Subtle shadow for images */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .feature-list li img {
+            max-width: 100%;
+        }
+    }
+
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%);
+    /* Gray-themed icons */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #A0A0A0;
+    /* Light gray text */
+}
+
+/* Video Styling */
+video {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    width: 15vw;
+    /* Responsive width */
+    height: auto;
+    /* Maintain aspect ratio */
+    z-index: 1;
+    /* Keeps the video on top */
+}
+
+@media (max-width: 768px) {
+    video {
+        width: 30vw;
+        /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .features-reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    video {
+        width: 50vw;
+        /* Further adjust width on very small screens */
+    }
+}
+
+/* Additional Styling for Samsung Aesthetic */
+.container {
+    background: linear-gradient(145deg, #1C1C1E, #2E2E2E);
+    /* Subtle gradient */
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.logo {
+    width: 100px;
+    /* Set the logo width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 20px;
+    /* Space between the logo and heading */
+    border-radius: 50px;
+
+}
